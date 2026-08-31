@@ -1,55 +1,39 @@
-# Jakie DLL są potrzebne do rekompilacji
+# Status kompilacji — ZWERYFIKOWANE ✅
 
-## Status weryfikacji (w tym środowisku)
+Po dograniu przez Ciebie brakujących DLL do repo `szosa898-source/test`
+udało się **faktycznie skompilować oba warianty poprawki** w tym środowisku.
 
-Pobrałem DLL z Twojego repo `szosa898-source/test` i **faktycznie skompilowałem**
-ViewModel poprawki:
+## Wyniki kompilacji (Roslyn csc, referencje = prawdziwe DLL gry z repo `test`)
 
-- ✅ `CnKMpBarVM.cs` (logika "pokaż pasek po użyciu many") — **KOMPILUJE SIĘ**
-  poprawnie (tylko nieszkodliwe ostrzeżenia CS1701 netstandard 2.0/2.1).
-- ❌ `CnKMpBarView.cs` — NIE skompilował się, bo brakuje **jednego** pliku:
-  `TaleWorlds.MountAndBlade.View.dll` (zawiera `MissionView`, `MissionScreen`).
+| Wariant | Pliki | Wynik |
+|--------|-------|-------|
+| Pasek tylko po użyciu many | `CnKMpBarVM.cs` + `CnKMpBarView.cs` | ✅ **kompiluje się** (`mp_on_use.dll`) |
+| Przełącznik w MCM | `CnKSettings.full.cs` + `CnKMpBarVM.full.cs` | ✅ **kompiluje się** (`mcm_toggle.dll`) |
 
-## Czego brakuje w Twoich repo
+Ostrzeżenia, które są OCZEKIWANE i nieszkodliwe:
+- **CS1701** (netstandard 2.0 vs 2.1) — standard dla modów Bannerlord; runtime gry to rozwiązuje.
+- **CS0436** (typ CnKMpBarVM konfliktuje z tym w BannerlordCnk.dll) — bo do testu
+  referuję ORYGINALNY mod DLL zawierający stare wersje klas. W finalnym buildzie,
+  gdzie te pliki ZASTĘPUJĄ oryginały, ostrzeżenie znika.
 
-W `szosa898-source/test` jest komplet TaleWorlds.* i SandBox.*, ALE brakuje:
+## Użyte referencje (wszystkie z repo `test`)
 
-1. **`TaleWorlds.MountAndBlade.View.dll`**  ← WYMAGANE (baza klasy `CnKMpBarView`)
-   Lokalizacja u Ciebie na dysku:
-   `...\Mount & Blade II Bannerlord\Modules\Native\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.View.dll`
-
-2. `MCM.Abstractions.dll` (+ `MCM.Common.dll`)  ← tylko jeśli chcesz też wariant
-   z przełącznikiem w MCM (`_patch_mcm_toggle`). Dla wersji "pokaż po użyciu" NIE jest
-   potrzebne.
-   Lokalizacja: folder modułu MCM, np.
-   `...\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCM.Abstractions.dll`
-
-## Pełna lista referencji potrzebnych do zbudowania obu plików poprawki
-
-Z repo `test` (mam je / są dostępne):
-- TaleWorlds.Library.dll
-- TaleWorlds.Core.dll
-- TaleWorlds.CampaignSystem.dll
-- TaleWorlds.Engine.dll
-- TaleWorlds.Engine.GauntletUI.dll
-- TaleWorlds.ScreenSystem.dll
-- TaleWorlds.MountAndBlade.dll
-- TaleWorlds.Localization.dll
-- TaleWorlds.ObjectSystem.dll
-- 0Harmony.dll
+Wspólne:
+- TaleWorlds.Library / Core / CampaignSystem / ObjectSystem / Localization
+- TaleWorlds.Engine / Engine.GauntletUI / ScreenSystem
+- TaleWorlds.MountAndBlade / **TaleWorlds.MountAndBlade.View** (dograne przez Ciebie)
 - BannerlordCnk.dll (oryginalny — dla typu MagicBehavior)
 
-Brakuje (dograj do repo `test` lub podaj):
-- **TaleWorlds.MountAndBlade.View.dll**   (konieczne)
-- MCM.Abstractions.dll, MCM.Common.dll     (tylko dla wariantu MCM)
+Dodatkowo dla wariantu MCM:
+- **MCMv5.dll** (dograne przez Ciebie) — zawiera cały MCM.Abstractions.* + MCM.Common.Dropdown
+- TaleWorlds.InputSystem
 
-## Co zrób, żebym dokończył kompilację TUTAJ
+## Co to oznacza dla Ciebie
 
-Wrzuć `TaleWorlds.MountAndBlade.View.dll` do repo `test` (najlepiej obok innych
-TaleWorlds.*). Wtedy zbuduję i zweryfikuję cały patch (View + VM) do końca,
-a jeśli dograsz też MCM.* — zbuduję również wariant z przełącznikiem.
+Kod poprawek jest **potwierdzony jako kompilowalny i zgodny z API**. Aby uzyskać
+finalny `BannerlordCnk.dll` do gry, wystarczy podmienić/dodać te pliki w
+ORYGINALNYM projekcie moda i zbudować całość (Twój znajomy autor ma ten projekt).
 
-Uwaga: pełny, finalny `BannerlordCnk.dll` do gry i tak najlepiej zbudować z
-ORYGINALNEGO projektu autora (tu mamy tylko dekompilat, który do produkcyjnego
-buildu wymagałby ręcznych poprawek artefaktów). Ale weryfikacja kompilacji
-samej poprawki jest w pełni wykonalna po dograniu View.dll.
+Dekompilat w `_decompiled/` nie nadaje się do produkcyjnego pełnego buildu bez
+ręcznych poprawek artefaktów IL — dlatego finalny build rób z oryginalnych źródeł.
+Same nasze pliki są gotowe i zweryfikowane.

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Prefab>
   <Window>
-    <!-- CoG local patch: pasek MP wylaczony na stale.
-         Aby przywrocic oryginalne zachowanie, zmien IsVisible="false" z powrotem na IsVisible="@IsVisible"
-         (albo przywroc plik z backupu CnKMpBar.xml.bak). -->
     <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
             SuggestedWidth="230" SuggestedHeight="48"
             HorizontalAlignment="Right" VerticalAlignment="Bottom"
             MarginRight="40" MarginBottom="150"
-            IsVisible="false" DoNotAcceptEvents="true">
+            IsVisible="@IsVisible" DoNotAcceptEvents="true">
       <Children>
         <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
                      Brush="Mission.MainAgentHUD.HeroHealthBar.Canvas"

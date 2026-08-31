@@ -1,0 +1,44 @@
+Patch koncepcyjny (Ścieżka 2) — dodaje przełącznik MCM "Show MP bar".
+Zastosuj na ORYGINALNYCH źródłach moda (u autora / w Twojej kopii z referencjami DLL).
+Ścieżki plików mogą się różnić — dopasuj do struktury projektu (Magic/Mission/, itd.).
+
+--- a/CnKSettings.cs
++++ b/CnKSettings.cs
+@@ (w grupie "Mission Spells", obok PowerWheelKey) @@
+     [SettingPropertyDropdown("{=cnk_settings_power_wheel_key_name}Power wheel key", Order = 0, RequireRestart = false, HintText = "{=cnk_settings_power_wheel_key_hint}Key held to open the mission power wheel. Opens instantly and releases/activates the highlighted power on release.")]
+     [SettingPropertyGroup("{=cnk_settings_group_mission_spells}Mission Spells", GroupOrder = 3)]
+     public Dropdown<InputKey> PowerWheelKey { get; set; } = new Dropdown<InputKey>((IEnumerable<InputKey>)_keyboardKeys, Math.Max(0, Array.IndexOf(_keyboardKeys, (InputKey)16)));
++
++    [SettingPropertyBool("{=cnk_settings_show_mp_bar_name}Show MP bar", Order = 1, RequireRestart = false, HintText = "{=cnk_settings_show_mp_bar_hint}When off, the mana (MP) bar is never shown during missions, even if your hero knows magic.")]
++    [SettingPropertyGroup("{=cnk_settings_group_mission_spells}Mission Spells", GroupOrder = 3)]
++    public bool ShowMpBar { get; set; } = true;
+
+
+--- a/Magic/Mission/CnKMpBarVM.cs
++++ b/Magic/Mission/CnKMpBarVM.cs
+@@ public void Refresh(Hero hero) @@
+     public void Refresh(Hero hero)
+     {
++        // Master switch z MCM: gdy wyłączony, pasek MP nigdy się nie pokazuje.
++        var settings = CnKSettings.Instance;
++        if (settings != null && !settings.ShowMpBar)
++        {
++            IsVisible = false;
++            return;
++        }
++
+         Campaign current = Campaign.Current;
+         MagicBehavior magicBehavior = current != null ? current.GetCampaignBehavior<MagicBehavior>() : null;
+         if (magicBehavior == null || hero == null)
+         {
+             IsVisible = false;
+             return;
+         }
+         IsVisible = magicBehavior.GetKnownCapacityIds(hero).Count > 0;
+         if (IsVisible)
+         {
+             int num = MaxMP = MagicBehavior.GetMaxMP(hero);
+             CurrentMP = magicBehavior.GetCurrentMP(hero);
+             MPRatio = (num > 0) ? ((float)CurrentMP / (float)num) : 0f;
+         }
+     }

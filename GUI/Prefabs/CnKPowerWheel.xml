@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="450" SuggestedHeight="450"
+            HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="General\RadialMenu\radial_menu_bg" Color="#00000099">
+          <Children>
+            <ButtonWidget IsVisible="@Slot0Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot0OffsetX" MarginTop="@Slot0OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot0SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot0StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget IsVisible="@Slot1Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot1OffsetX" MarginTop="@Slot1OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot1SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot1StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget IsVisible="@Slot2Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot2OffsetX" MarginTop="@Slot2OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot2SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot2StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget IsVisible="@Slot3Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot3OffsetX" MarginTop="@Slot3OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot3SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot3StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget IsVisible="@Slot4Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot4OffsetX" MarginTop="@Slot4OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot4SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot4StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+            <ButtonWidget IsVisible="@Slot5Visible" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70"
+                MarginLeft="@Slot5OffsetX" MarginTop="@Slot5OffsetY">
+              <Children>
+                <ImageWidget Sprite="@Slot5SpriteName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+                <TextWidget Text="@Slot5StatusText" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="18" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="400" SuggestedHeight="80"
+            HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="260">
+          <Children>
+            <TextWidget Text="@SelectedName" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" />
+            <TextWidget Text="@SelectedDescription" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" MarginTop="30" />
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

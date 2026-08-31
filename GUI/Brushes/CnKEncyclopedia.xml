@@ -1,0 +1,7 @@
+<Brushes>
+  <Brush Name="EncyclopediaOldGods" BaseBrush="Encyclopedia.Home.Button.Base">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="BL_CnK\Encyclopedia\old_gods" Color="#FFFFFFFF" />
+    </Layers>
+  </Brush>
+</Brushes>

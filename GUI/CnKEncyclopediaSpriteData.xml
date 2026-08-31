@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+  <SpriteCategories>
+    <SpriteCategory>
+      <Name>ui_cnk_encyclopedia</Name>
+      <SpriteSheetCount>1</SpriteSheetCount>
+      <SpriteSheetSize ID="1" Width="231" Height="522" />
+    </SpriteCategory>
+  </SpriteCategories>
+  <SpriteParts>
+    <SpritePart>
+      <SheetID>1</SheetID>
+      <Name>BL_CnK\Encyclopedia\OldGods</Name>
+      <Width>231</Width>
+      <Height>522</Height>
+      <SheetX>0</SheetX>
+      <SheetY>0</SheetY>
+      <CategoryName>ui_cnk_encyclopedia</CategoryName>
+    </SpritePart>
+  </SpriteParts>
+  <Sprites>
+    <GenericSprite>
+      <Name>BL_CnK\Encyclopedia\old_gods</Name>
+      <SpritePartName>BL_CnK\Encyclopedia\OldGods</SpritePartName>
+    </GenericSprite>
+  </Sprites>
+</SpriteData>

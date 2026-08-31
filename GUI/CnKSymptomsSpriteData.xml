@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+  <SpriteCategories>
+    <SpriteCategory>
+      <Name>ui_cnk_symptoms</Name>
+      <SpriteSheetCount>7</SpriteSheetCount>
+      <SpriteSheetSize ID="1" Width="512" Height="512" />
+      <SpriteSheetSize ID="2" Width="512" Height="512" />
+      <SpriteSheetSize ID="3" Width="512" Height="512" />
+      <SpriteSheetSize ID="4" Width="512" Height="512" />
+      <SpriteSheetSize ID="5" Width="512" Height="512" />
+      <SpriteSheetSize ID="6" Width="512" Height="512" />
+      <SpriteSheetSize ID="7" Width="512" Height="512" />
+    </SpriteCategory>
+  </SpriteCategories>
+  <SpriteParts>
+    <SpritePart><SheetID>1</SheetID><Name>BL_CnK\Symptoms\Thalassophobia</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>2</SheetID><Name>BL_CnK\Symptoms\Claustrophobia</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>3</SheetID><Name>BL_CnK\Symptoms\Agoraphobia</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>4</SheetID><Name>BL_CnK\Symptoms\Hallucinations</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>5</SheetID><Name>BL_CnK\Symptoms\Paranoia</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>6</SheetID><Name>BL_CnK\Symptoms\SelfDestruction</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+    <SpritePart><SheetID>7</SheetID><Name>BL_CnK\Symptoms\Necrophobia</Name><Width>512</Width><Height>512</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_symptoms</CategoryName></SpritePart>
+  </SpriteParts>
+  <Sprites>
+    <GenericSprite><Name>BL_CnK\Symptoms\thalassophobia</Name><SpritePartName>BL_CnK\Symptoms\Thalassophobia</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\claustrophobia</Name><SpritePartName>BL_CnK\Symptoms\Claustrophobia</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\agoraphobia</Name><SpritePartName>BL_CnK\Symptoms\Agoraphobia</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\hallucinations</Name><SpritePartName>BL_CnK\Symptoms\Hallucinations</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\paranoia</Name><SpritePartName>BL_CnK\Symptoms\Paranoia</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\self_destruction</Name><SpritePartName>BL_CnK\Symptoms\SelfDestruction</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\Symptoms\necrophobia</Name><SpritePartName>BL_CnK\Symptoms\Necrophobia</SpritePartName></GenericSprite>
+  </Sprites>
+</SpriteData>

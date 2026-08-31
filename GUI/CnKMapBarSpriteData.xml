@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+  <SpriteCategories>
+    <SpriteCategory>
+      <Name>ui_cnk_mapbar</Name>
+      <SpriteSheetCount>1</SpriteSheetCount>
+      <SpriteSheetSize ID="1" Width="128" Height="128" />
+    </SpriteCategory>
+  </SpriteCategories>
+  <SpriteParts>
+    <SpritePart>
+      <SheetID>1</SheetID>
+      <Name>BL_CnK\MapBar\CnKMenu</Name>
+      <Width>128</Width>
+      <Height>128</Height>
+      <SheetX>0</SheetX>
+      <SheetY>0</SheetY>
+      <CategoryName>ui_cnk_mapbar</CategoryName>
+    </SpritePart>
+  </SpriteParts>
+  <Sprites>
+    <GenericSprite>
+      <Name>BL_CnK\MapBar\cnk_menu</Name>
+      <SpritePartName>BL_CnK\MapBar\CnKMenu</SpritePartName>
+    </GenericSprite>
+  </Sprites>
+</SpriteData>

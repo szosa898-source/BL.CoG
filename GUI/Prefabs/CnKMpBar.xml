@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+            SuggestedWidth="230" SuggestedHeight="48"
+            HorizontalAlignment="Right" VerticalAlignment="Bottom"
+            MarginRight="40" MarginBottom="150"
+            IsVisible="@IsVisible" DoNotAcceptEvents="true">
+      <Children>
+        <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                     Brush="Mission.MainAgentHUD.HeroHealthBar.Canvas"
+                     Brush.SaturationFactor="-60" Brush.ValueFactor="-30"
+                     Color="#2540C9FF" DoNotAcceptEvents="true" />
+
+        <FillBarWidget ClipContents="true"
+                       WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed"
+                       SuggestedHeight="15" VerticalAlignment="Center" PositionYOffset="-2"
+                       MarginLeft="18" MarginRight="18"
+                       FillWidget="MpFill"
+                       MaxAmountAsFloat="1" InitialAmountAsFloat="@MPRatio"
+                       CurrentAmountAsFloat="@MPRatio"
+                       DoNotAcceptEvents="true">
+          <Children>
+            <Widget Id="MpFill" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent"
+                    SuggestedWidth="230" HorizontalAlignment="Left"
+                    Sprite="mission_health_bar_fill_9" Color="#3B5EE6FF"
+                    DoNotAcceptEvents="true">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed"
+                        SuggestedHeight="2" VerticalAlignment="Top"
+                        Sprite="BlankWhiteSquare" Color="#B8C6F566"
+                        DoNotAcceptEvents="true" />
+              </Children>
+            </Widget>
+          </Children>
+        </FillBarWidget>
+
+        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    IntText="@CurrentMP"
+                    DoNotAcceptEvents="true" />
+
+        <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                     Brush="Mission.MainAgentHUD.HeroHealthBar.Frame"
+                     Brush.SaturationFactor="-55" Brush.ValueFactor="-15"
+                     Color="#5C74C2FF" DoNotAcceptEvents="true" />
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

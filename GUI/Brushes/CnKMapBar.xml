@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Brushes>
+  <Brush Name="BL_CnK.MapBar.Left.Button.Backgrounds" OverrideBrush="MapBar.Left.Button.Backgrounds">
+    <Layers>
+      <BrushLayer Name="cnk_menu" Sprite="MapBar\bottom_left_button6_clan" />
+    </Layers>
+  </Brush>
+  <Brush Name="BL_CnK.MapBar.Left.Icons" OverrideBrush="MapBar.Left.Icons">
+    <Layers>
+      <BrushLayer Name="cnk_menu" Sprite="BL_CnK\MapBar\cnk_menu"
+                  ExtendTop="-4" ExtendBottom="-4" ExtendRight="-4" ExtendLeft="-4"
+                  ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+    </Layers>
+  </Brush>
+</Brushes>

@@ -1,0 +1,31 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#0A0A0AEE">
+          <Children>
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="40" MarginBottom="40" MarginLeft="50" MarginRight="50" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="Kingdom.NameTitle.Text" Text="@TitleText" />
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="600" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="12" Sprite="GradientDivider_9" AlphaFactor="0.4" />
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="420" SuggestedHeight="420" HorizontalAlignment="Center" MarginTop="20" Sprite="@SymptomImageSprite" />
+
+                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="560" HeightSizePolicy="Fixed" SuggestedHeight="110" HorizontalAlignment="Center" MarginTop="25" Brush="Party.Text.Tuple" Text="@BodyText" />
+
+                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="220" SuggestedHeight="55" HorizontalAlignment="Center" MarginTop="20" Brush="Header.Tab.Left" Command.Click="ExecuteContinue" DoNotPassEventsToChildren="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Continue" /></Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

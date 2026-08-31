@@ -1,0 +1,329 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <Standard.Background />
+
+        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="30" Brush="Kingdom.NameTitle.Text" Text="@HeroName" />
+
+        <!--Tab Bar-->
+        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="90">
+          <Children>
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+                <ButtonWidget Id="OverviewTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Left" Command.Click="ExecuteSelectOverview" IsSelected="@IsOverviewSelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Overview" /></Children>
+                </ButtonWidget>
+                <ButtonWidget Id="MagicKnowledgeTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Center" Command.Click="ExecuteSelectMagicKnowledge" IsSelected="@IsMagicKnowledgeSelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Magic &amp; Knowledge" /></Children>
+                </ButtonWidget>
+                <ButtonWidget Id="CapacitiesTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Center" Command.Click="ExecuteSelectCapacities" IsSelected="@IsCapacitiesSelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Capacities" /></Children>
+                </ButtonWidget>
+                <ButtonWidget Id="BestiaryTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Center" Command.Click="ExecuteSelectBestiary" IsSelected="@IsBestiarySelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Bestiary" /></Children>
+                </ButtonWidget>
+                <ButtonWidget Id="TeachersTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Center" Command.Click="ExecuteSelectTeachers" IsSelected="@IsTeachersSelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Teachers" /></Children>
+                </ButtonWidget>
+                <ButtonWidget Id="OldOnesTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="60" Brush="Header.Tab.Right" Command.Click="ExecuteSelectOldOnes" IsSelected="@IsOldOnesSelected" UpdateChildrenStates="true">
+                  <Children><TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="Entities" /></Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+          </Children>
+        </Widget>
+
+        <!--=========== Overview Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="420" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsOverviewSelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="OverviewClipRect" InnerPanel="OverviewClipRect\OverviewInnerPanel" VerticalScrollbar="..\OverviewScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="OverviewClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="OverviewInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="30" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <Children>
+
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="34" HorizontalAlignment="Center" Brush="Kingdom.TitleMedium.Text" Text="@SanityText" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" MarginTop="8" Brush="Party.Text.Tuple" Text="@MagicPointsText" />
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="700" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="15" Sprite="GradientDivider_9" AlphaFactor="0.4" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" MarginTop="20" Brush="Party.Text.Tuple" Text="@IllnessesText" />
+
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="OverviewScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <!--=========== Magic & Knowledge Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="560" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsMagicKnowledgeSelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="MagicClipRect" InnerPanel="MagicClipRect\MagicInnerPanel" VerticalScrollbar="..\MagicScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="MagicClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="MagicInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <Children>
+
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="260" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@FolkloreText" />
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="260" HeightSizePolicy="StretchToParent" MarginLeft="40" Brush="Party.Text.Tuple" Text="@MythosText" />
+                              </Children>
+                            </ListPanel>
+
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="820" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="15" Sprite="GradientDivider_9" AlphaFactor="0.4" />
+
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" HorizontalAlignment="Left" MarginLeft="40" MarginTop="15" Brush="Clan.TabControl.Text" Text="@KnownPathsHeaderText" />
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="50" HorizontalAlignment="Center" MarginTop="15" AlphaFactor="0.4" /> <!--Spacer-->
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" HorizontalAlignment="Left" MarginLeft="40" MarginTop="15" Brush="Clan.TabControl.Text" Text="@MagicXpPoolText" />
+                              </Children>
+                            </ListPanel>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="20" HorizontalAlignment="Center" MarginTop="15" AlphaFactor="0.4" /> <!--Spacer-->
+                            <ListPanel Id="KnownPathsList" DataSource="{KnownPaths}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="8" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <ItemTemplate>
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="56" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="200" HeightSizePolicy="Fixed" SuggestedHeight="28" Brush="Party.Text.Tuple" Text="@PathName" />
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="Fixed" SuggestedHeight="28" Brush="Party.Text.Tuple" Text="@LevelText" />
+                                    <!--Remove pending xp from this path, back to the pool-->
+                                    <ButtonWidget Id="MinusButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"
+                                                  Brush="Inventory.Tuple.Extension.MinusButton" Command.Click="ExecuteDecrease"
+                                                  DoNotPassEventsToChildren="true" IsEnabled="@CanDecrease" IsVisible="@HasPath" />
+                                    <!--Allocate xp from the pool to this path-->
+                                    <ButtonWidget Id="PlusButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"
+                                                  Brush="Inventory.Tuple.Extension.PlusButton" Command.Click="ExecuteIncrease"
+                                                  DoNotPassEventsToChildren="true" IsEnabled="@CanIncrease" IsVisible="@HasPath" />
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="30" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" /> <!--Spacer-->
+                                    <!--Progress bar - cumulative xp across all 5 levels, hidden when this slot has no path-->
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="@HasPath">
+                                      <Children>
+                                        <FillBar WidthSizePolicy="Fixed" SuggestedWidth="380" HeightSizePolicy="Fixed" SuggestedHeight="20" Brush="HealthBarBrush" MaxAmount="@MaxAmount" CurrentAmount="@CurrentAmount" InitialAmount="0" />
+                                        <ListPanel WidthSizePolicy="Fixed" SuggestedWidth="380" HeightSizePolicy="Fixed" SuggestedHeight="28" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                          <Children>
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="1" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="25" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="2" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="50" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="3" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="4" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="205" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" />
+                                            <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="5" />
+                                          </Children>
+                                        </ListPanel>
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ListPanel>
+                              </ItemTemplate>
+                            </ListPanel>
+
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="820" SuggestedHeight="50" HorizontalAlignment="Center" MarginTop="15" AlphaFactor="0.4" /> <!--Spacer-->
+
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                              <!--Validate button: commit definitely affected xp points to selected path(s)-->
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="250" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" />
+                                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="50"
+                                            Brush="Popup.Done.Button" Command.Click="ExecuteValidate" DoNotPassEventsToChildren="true" UpdateChildrenStates="true">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="Validate" />
+                                  </Children>
+                                </ButtonWidget>
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="50" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="" /> <!--Spacer-->
+                                <!--Reset Button: takes back pending (unvalidated) xp points from affected selected path(s) to global magic xp pool-->
+                                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="50"
+                                              Brush="ButtonBrush2" Command.Click="ExecuteReset" DoNotPassEventsToChildren="true" UpdateChildrenStates="true">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="Reset" />
+                                  </Children>
+                                </ButtonWidget>
+                              </Children>
+                            </ListPanel>
+
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="820" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="20" Sprite="GradientDivider_9" AlphaFactor="0.4" />
+
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" HorizontalAlignment="Left" MarginLeft="40" MarginTop="15" Brush="Clan.TabControl.Text" Text="Books" />
+                            <ListPanel Id="BooksList" DataSource="{Books}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="8" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <ItemTemplate>
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="400" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@PrimaryText" />
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="150" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@SecondaryText" />
+                                  </Children>
+                                </ListPanel>
+                              </ItemTemplate>
+                            </ListPanel>
+
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="MagicScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <!--=========== Capacities Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="560" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsCapacitiesSelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="CapacitiesClipRect" InnerPanel="CapacitiesClipRect\CapacitiesInnerPanel" VerticalScrollbar="..\CapacitiesScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="CapacitiesClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="CapacitiesInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel Id="CapacitiesList" DataSource="{Capacities}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginRight="40" MarginBottom="14" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <Children>
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="Clan.TabControl.Text" Text="@DisplayName" />
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="2" Brush="Party.Text.Tuple" Brush.FontSize="16" AlphaFactor="0.7" Text="@TechnicalsText" IsVisible="@HasCapacity" />
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="4" Brush="Kingdom.DecisionParagraph.Text" Text="@DescriptionText" IsVisible="@HasCapacity" />
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="2" Brush="Kingdom.DecisionParagraph.Text" AlphaFactor="0.6" Text="@EffectNotesText" IsVisible="@HasCapacity" />
+
+                                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="140" SuggestedHeight="36" MarginTop="6"
+                                              Brush="Popup.Done.Button" Command.Click="ExecuteUse" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" IsVisible="@IsCampaignMap">
+                                  <Children><TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="Use" /></Children>
+                                </ButtonWidget>
+
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" MarginTop="6" StackLayout.LayoutMethod="HorizontalLeftToRight" IsVisible="@IsMission">
+                                  <Children>
+                                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" Brush="Inventory.Tuple.Extension.MinusButton" Command.Click="ExecuteDecreaseSlot" DoNotPassEventsToChildren="true" />
+                                    <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="180" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Brush="Party.Text.Tuple" Text="@SlotText" />
+                                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" Brush="Inventory.Tuple.Extension.PlusButton" Command.Click="ExecuteIncreaseSlot" DoNotPassEventsToChildren="true" />
+                                  </Children>
+                                </ListPanel>
+
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="6" Brush="Party.Text.Tuple" AlphaFactor="0.6" Text="(Passive — always active)" IsVisible="@IsPassive" />
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="6" Brush="Party.Text.Tuple" AlphaFactor="0.6" Text="(Accessible through dialogue)" IsVisible="@IsDialogueOnly" />
+
+                                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" MarginTop="10" Sprite="GradientDivider_9" AlphaFactor="0.3" IsVisible="@HasCapacity" />
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="CapacitiesScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <!--=========== Bestiary Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="420" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsBestiarySelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="BestiaryClipRect" InnerPanel="BestiaryClipRect\BestiaryInnerPanel" VerticalScrollbar="..\BestiaryScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="BestiaryClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="BestiaryInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel Id="BestiaryList" DataSource="{Bestiary}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="30" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="34" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="StretchToParent" Brush="Clan.TabControl.Text" Text="@PrimaryText" />
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="560" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@SecondaryText" />
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="BestiaryScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <!--=========== Teachers Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="420" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsTeachersSelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="TeachersClipRect" InnerPanel="TeachersClipRect\TeachersInnerPanel" VerticalScrollbar="..\TeachersScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="TeachersClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="TeachersInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel Id="TeachersList" DataSource="{Teachers}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="30" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="34" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="StretchToParent" Brush="Clan.TabControl.Text" Text="@PrimaryText" />
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="560" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@SecondaryText" />
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="TeachersScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <!--=========== Old Ones Panel ===========-->
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1280" SuggestedHeight="420" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="190" Sprite="BlankWhiteSquare_9" Color="#00000099" IsVisible="@IsOldOnesSelected">
+          <Children>
+            <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="OldOnesClipRect" InnerPanel="OldOnesClipRect\OldOnesInnerPanel" VerticalScrollbar="..\OldOnesScrollbar\Scrollbar" MarginRight="35">
+              <Children>
+                <Widget Id="OldOnesClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                  <Children>
+                    <Widget Id="OldOnesInnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top">
+                      <Children>
+                        <ListPanel Id="OldOnesList" DataSource="{OldOnes}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="40" MarginTop="30" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="34" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="StretchToParent" Brush="Clan.TabControl.Text" Text="@PrimaryText" />
+                                <TextWidget WidthSizePolicy="Fixed" SuggestedWidth="560" HeightSizePolicy="StretchToParent" Brush="Party.Text.Tuple" Text="@SecondaryText" />
+                              </Children>
+                            </ListPanel>
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ScrollablePanel>
+            <Standard.VerticalScrollbar Id="OldOnesScrollbar" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="10"/>
+          </Children>
+        </Widget>
+
+        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="30" Brush="Popup.Cancel.Button" Command.Click="ExecuteClose" DoNotPassEventsToChildren="true">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="Close" />
+          </Children>
+        </ButtonWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+  <SpriteCategories>
+    <SpriteCategory>
+      <Name>ui_cnk_mission_spell</Name>
+      <SpriteSheetCount>16</SpriteSheetCount>
+      <SpriteSheetSize ID="1" Width="128" Height="128" />
+      <SpriteSheetSize ID="2" Width="128" Height="128" />
+      <SpriteSheetSize ID="3" Width="128" Height="128" />
+      <SpriteSheetSize ID="4" Width="128" Height="128" />
+      <SpriteSheetSize ID="5" Width="128" Height="128" />
+      <SpriteSheetSize ID="6" Width="128" Height="128" />
+      <SpriteSheetSize ID="7" Width="128" Height="128" />
+      <SpriteSheetSize ID="8" Width="128" Height="128" />
+      <SpriteSheetSize ID="9" Width="128" Height="128" />
+      <SpriteSheetSize ID="10" Width="128" Height="128" />
+      <SpriteSheetSize ID="11" Width="128" Height="128" />
+      <SpriteSheetSize ID="12" Width="128" Height="128" />
+      <SpriteSheetSize ID="13" Width="128" Height="128" />
+      <SpriteSheetSize ID="14" Width="128" Height="128" />
+      <SpriteSheetSize ID="15" Width="128" Height="128" />
+      <SpriteSheetSize ID="16" Width="128" Height="128" />
+    </SpriteCategory>
+  </SpriteCategories>
+  <SpriteParts>
+    <SpritePart><SheetID>1</SheetID><Name>BL_CnK\MissionSpells\MinorHealing</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>2</SheetID><Name>BL_CnK\MissionSpells\Repel</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>3</SheetID><Name>BL_CnK\MissionSpells\SonicAttack</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>4</SheetID><Name>BL_CnK\MissionSpells\PalmStrike</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>5</SheetID><Name>BL_CnK\MissionSpells\StoneSkin</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>6</SheetID><Name>BL_CnK\MissionSpells\DominateTheDead</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>7</SheetID><Name>BL_CnK\MissionSpells\ModerateHealing</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>8</SheetID><Name>BL_CnK\MissionSpells\Healing</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>9</SheetID><Name>BL_CnK\MissionSpells\ShadowEntanglement</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>10</SheetID><Name>BL_CnK\MissionSpells\CharnelCaress</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>11</SheetID><Name>BL_CnK\MissionSpells\IgokusBite</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>12</SheetID><Name>BL_CnK\MissionSpells\FleshRot</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>13</SheetID><Name>BL_CnK\MissionSpells\AggravatedAffliction</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>14</SheetID><Name>BL_CnK\MissionSpells\Asphyxiation</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>15</SheetID><Name>BL_CnK\MissionSpells\WardingCircle</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+    <SpritePart><SheetID>16</SheetID><Name>BL_CnK\MissionSpells\BattleBlessing</Name><Width>128</Width><Height>128</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_mission_spell</CategoryName></SpritePart>
+  </SpriteParts>
+  <Sprites>
+    <GenericSprite><Name>BL_CnK\MissionSpells\minor_healing</Name><SpritePartName>BL_CnK\MissionSpells\MinorHealing</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\repel</Name><SpritePartName>BL_CnK\MissionSpells\Repel</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\sonic_attack</Name><SpritePartName>BL_CnK\MissionSpells\SonicAttack</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\palm_strike</Name><SpritePartName>BL_CnK\MissionSpells\PalmStrike</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\stone_skin</Name><SpritePartName>BL_CnK\MissionSpells\StoneSkin</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\dominate_the_dead</Name><SpritePartName>BL_CnK\MissionSpells\DominateTheDead</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\moderate_healing</Name><SpritePartName>BL_CnK\MissionSpells\ModerateHealing</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\healing</Name><SpritePartName>BL_CnK\MissionSpells\Healing</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\shadow_entanglement</Name><SpritePartName>BL_CnK\MissionSpells\ShadowEntanglement</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\charnel_caress</Name><SpritePartName>BL_CnK\MissionSpells\CharnelCaress</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\igokus_bite</Name><SpritePartName>BL_CnK\MissionSpells\IgokusBite</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\flesh_rot</Name><SpritePartName>BL_CnK\MissionSpells\FleshRot</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\aggravated_affliction</Name><SpritePartName>BL_CnK\MissionSpells\AggravatedAffliction</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\asphyxiation</Name><SpritePartName>BL_CnK\MissionSpells\Asphyxiation</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\warding_circle</Name><SpritePartName>BL_CnK\MissionSpells\WardingCircle</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\MissionSpells\battle_blessing</Name><SpritePartName>BL_CnK\MissionSpells\BattleBlessing</SpritePartName></GenericSprite>
+  </Sprites>
+</SpriteData>

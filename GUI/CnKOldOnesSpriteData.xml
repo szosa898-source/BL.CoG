@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpriteData>
+  <SpriteCategories>
+    <SpriteCategory>
+      <Name>ui_cnk_oldones</Name>
+      <SpriteSheetCount>11</SpriteSheetCount>
+      <SpriteSheetSize ID="1" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="2" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="3" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="4" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="5" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="6" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="7" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="8" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="9" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="10" Width="1920" Height="1080" />
+      <SpriteSheetSize ID="11" Width="1920" Height="1080" />
+    </SpriteCategory>
+  </SpriteCategories>
+  <SpriteParts>
+    <SpritePart><SheetID>1</SheetID><Name>BL_CnK\OldOnes\Aureth</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>2</SheetID><Name>BL_CnK\OldOnes\Varkhane</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>3</SheetID><Name>BL_CnK\OldOnes\Vaerun</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>4</SheetID><Name>BL_CnK\OldOnes\Erynd</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>5</SheetID><Name>BL_CnK\OldOnes\Avarn</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>6</SheetID><Name>BL_CnK\OldOnes\Nethra</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>7</SheetID><Name>BL_CnK\OldOnes\Azathoth</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>8</SheetID><Name>BL_CnK\OldOnes\Nyarlathotep</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>9</SheetID><Name>BL_CnK\OldOnes\Hastur</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>10</SheetID><Name>BL_CnK\OldOnes\ShubNiggurath</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+    <SpritePart><SheetID>11</SheetID><Name>BL_CnK\OldOnes\BoundaryWarden</Name><Width>1920</Width><Height>1080</Height><SheetX>0</SheetX><SheetY>0</SheetY><CategoryName>ui_cnk_oldones</CategoryName></SpritePart>
+  </SpriteParts>
+  <Sprites>
+    <GenericSprite><Name>BL_CnK\OldOnes\aureth</Name><SpritePartName>BL_CnK\OldOnes\Aureth</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\varkhane</Name><SpritePartName>BL_CnK\OldOnes\Varkhane</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\vaerun</Name><SpritePartName>BL_CnK\OldOnes\Vaerun</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\erynd</Name><SpritePartName>BL_CnK\OldOnes\Erynd</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\avarn</Name><SpritePartName>BL_CnK\OldOnes\Avarn</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\nethra</Name><SpritePartName>BL_CnK\OldOnes\Nethra</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\azathoth</Name><SpritePartName>BL_CnK\OldOnes\Azathoth</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\nyarlathotep</Name><SpritePartName>BL_CnK\OldOnes\Nyarlathotep</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\hastur</Name><SpritePartName>BL_CnK\OldOnes\Hastur</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\shubniggurath</Name><SpritePartName>BL_CnK\OldOnes\ShubNiggurath</SpritePartName></GenericSprite>
+    <GenericSprite><Name>BL_CnK\OldOnes\boundary_warden</Name><SpritePartName>BL_CnK\OldOnes\BoundaryWarden</SpritePartName></GenericSprite>
+  </Sprites>
+</SpriteData>

@@ -1,0 +1,45 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <!--Full-bleed background - swaps per node via BackgroundSprite. No real per-entity art yet;
+            the capacity currently always passes a dark placeholder sprite.-->
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="@BackgroundSprite" />
+
+        <!--Title-->
+        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="60" Brush="Kingdom.NameTitle.Text" Text="@TitleText" />
+
+        <!--Body + choices panel, bottom third, dimmed so it stays legible over the art above it-->
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="360" VerticalAlignment="Bottom" Sprite="BlankWhiteSquare_9" Color="#0A0A0AEE">
+          <Children>
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="30" MarginLeft="80" MarginRight="80" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="Party.Text.Tuple" Text="@BodyText" />
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="10" SuggestedHeight="24" /> <!--Spacer-->
+
+                <ListPanel Id="ResponseOptionsList" DataSource="{ResponseOptions}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <ItemTemplate>
+                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="6"
+                                  Sprite="BlankWhiteSquare_9" Brush.Color="#3A2A1499"
+                                  Command.Click="ExecuteSelect" DoNotPassEventsToChildren="true">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+                                    MarginTop="8" MarginBottom="8" MarginLeft="30" MarginRight="20"
+                                    Brush="Party.Text.Tuple" Text="@Text" />
+                      </Children>
+                    </ButtonWidget>
+                  </ItemTemplate>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

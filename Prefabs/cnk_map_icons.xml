@@ -1,0 +1,140 @@
+<prefabs>
+
+<!--Inns-->
+
+	<game_entity name="cnk_inn_1" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_vla_house_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_2" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_vla_house_d"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_3" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_stu_tavern"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_4" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_emp_tavern"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_5" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_vla_house_f"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_6" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_emp_house_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_inn_7" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_emp_house_a"/>
+		</components>
+	</game_entity>
+
+	<!--Temples-->
+
+	<game_entity name="cnk_temple_1" old_prefab_name="" mobility="0"> <!--biggest temple-->
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="great_temple_1"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_temple_2" old_prefab_name="" mobility="0"> <!--monastery-->
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_stu_keep_1"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_temple_3" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_bat_tavern"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_temple_4" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_aserai_city_house_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_temple_5" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_khuz_keep_1"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_temple_6" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_stu_house_d"/>
+		</components>
+	</game_entity>
+
+	<!--Astrologist towers-->
+
+	<game_entity name="cnk_tower_1" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_khuz_tower_2"/>
+		</components>
+	</game_entity>
+	<game_entity name="cnk_tower_2" old_prefab_name="" mobility="0">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="mi_vla_tower_3"/>
+		</components>
+	</game_entity>
+
+	<!--Clue Markers-->
+
+	<game_entity name="cnk_clue_marker" old_prefab_name="" mobility="0">
+		<tags>
+			<tag name="cnk_marker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+		<components>
+			<meta_mesh_component name="cnk_monolith"/>
+		</components>
+	</game_entity>
+
+	<game_entity name="cnk_portal_1" old_prefab_name="" mobility="0">
+		<tags>
+			<tag name="cnk_portal_1"/>
+			<tag name="cnk_marker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+		<components>
+			<meta_mesh_component name="cnk_portal_1"/>
+		</components>
+	</game_entity>
+
+</prefabs>

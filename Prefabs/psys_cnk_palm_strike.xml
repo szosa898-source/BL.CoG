@@ -1,0 +1,11 @@
+<prefabs>
+	<game_entity name="psys_cnk_palm_strike" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect_ref base_effect="{EAD487B3-949A-41A7-8C1E-F05F1D490560}"/>
+			</particle_system_instanced_component>
+		</components>
+	</game_entity>
+</prefabs>
+

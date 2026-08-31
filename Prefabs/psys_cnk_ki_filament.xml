@@ -1,0 +1,11 @@
+<prefabs>
+	<game_entity name="psys_cnk_ki_filament" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect_ref base_effect="{B2A1DE85-36CE-4CC8-80AD-B5D7857652C7}"/>
+			</particle_system_instanced_component>
+		</components>
+	</game_entity>
+</prefabs>
+

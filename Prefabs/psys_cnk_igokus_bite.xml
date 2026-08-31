@@ -1,0 +1,11 @@
+<prefabs>
+	<game_entity name="psys_cnk_igokus_bite" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect_ref base_effect="{D3B92E0D-0ECC-4CA5-AEAA-9FE31A971502}"/>
+			</particle_system_instanced_component>
+		</components>
+	</game_entity>
+</prefabs>
+

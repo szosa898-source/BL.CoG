@@ -1,0 +1,11 @@
+<prefabs>
+	<game_entity name="psys_cnk_power_01" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect_ref base_effect="{18317BA4-24D2-47E8-A800-DFCB880D7DA8}"/>
+			</particle_system_instanced_component>
+		</components>
+	</game_entity>
+</prefabs>
+

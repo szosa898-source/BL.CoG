@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<scene name="cnk_bat_house_01" version="2">
+	<flora_bounding_rect min="0.000, 0.000" max="0.000, 0.000"/>
+	<levels>
+		<level name="base" mask="1"/>
+		<level name="level_1" mask="2"/>
+		<level name="level_2" mask="4"/>
+		<level name="level_3" mask="8"/>
+	</levels>
+	<environment_properties>
+		<property name="nav_mesh_auto_generated_" value="false"/>
+		<property name="physics_world_min" value="0.000, 0.000"/>
+		<property name="physics_world_max_" value="100.471, 87.963"/>
+		<property name="north_angle" value="0.000"/>
+		<property name="is_indoors" value="true"/>
+		<property name="disable_flora_billboards" value="false"/>
+		<property name="ground_color" value="0.000, 0.000, 0.000"/>
+		<property name="prt_multiplier" value="1.000"/>
+		<property name="prt_point_light_multiplier" value="1.000"/>
+		<property name="fog_start_distance" value="50.000"/>
+		<property name="prt_color_contrast" value="1.000"/>
+		<property name="scene_scale_multiplier" value="1.000"/>
+		<property name="prt_intensity_contrast" value="1.000"/>
+		<property name="prt_fallback_probe_index" value="-1, -1, -1"/>
+		<property name="enforced_color_grade" value=""/>
+		<property name="gi_data_exists" value="false"/>
+		<atmosphere_properties>
+			<property name="atmosphere_name" value="scene_atmosphere"/>
+			<property name="wind_meters" value="0.000, 0.000"/>
+			<property name="scene_fog_falloff_offset" value="0.000"/>
+		</atmosphere_properties>
+		<water_properties version="1">
+			<property name="water_level" value="-100.000"/>
+			<property name="water_strength" value="5.000"/>
+			<property name="water_wind_dependency" value="1.000"/>
+			<property name="choppiness" value="1.000"/>
+			<property name="water_material" value="water_default"/>
+			<property name="non_naval_water_material_override" value=""/>
+			<property name="water_shallow_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_deep_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_exists" value="false"/>
+			<property name="place_water_probe" value="true"/>
+		</water_properties>
+		<out_of_bounds_effects_properties>
+			<property name="vignette_color" value="0.000, 0.500, 1.000"/>
+			<property name="vignette_alpha" value="0.000"/>
+		</out_of_bounds_effects_properties>
+	</environment_properties>
+	<entities>
+		<game_entity prefab="stone_pile_d">
+			<transform position="87.724, 74.392, 1.893" rotation_euler="-0.192, 1.671, 0.659" scale="0.556, 0.556, 0.556"/>
+		</game_entity>
+		<game_entity prefab="bd_skull_ram">
+			<transform position="88.685, 72.454, 5.342" rotation_euler="0.000, 0.000, -1.053"/>
+		</game_entity>
+		<game_entity prefab="kitchen_cutting_food_fish">
+			<transform position="83.406, 62.752, 3.118" rotation_euler="0.000, 0.000, -0.288"/>
+		</game_entity>
+		<game_entity prefab="kitchen_sausage_b">
+			<transform position="83.509, 61.958, 4.882" rotation_euler="0.000, 0.000, -2.079"/>
+		</game_entity>
+		<game_entity prefab="kitchen_garlic_c">
+			<transform position="83.252, 62.932, 3.126" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="bd_table_c">
+			<transform position="85.159, 66.590, 2.104" rotation_euler="0.000, 0.000, -1.582" scale="0.776, 1.000, 1.000"/>
+		</game_entity>
+		<game_entity prefab="bd_chair_e_unsittable">
+			<transform position="85.543, 65.251, 2.104" rotation_euler="0.000, 0.000, 0.011"/>
+		</game_entity>
+		<game_entity prefab="bd_chair_e_unsittable">
+			<transform position="85.228, 67.940, 2.104" rotation_euler="0.000, 0.000, 0.011"/>
+		</game_entity>
+		<game_entity prefab="bd_stacked_wood">
+			<transform position="78.314, 64.998, 2.320" rotation_euler="0.000, 0.000, -0.544"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="85.867, 65.146, 4.048" rotation_euler="0.000, 0.000, -1.732"/>
+			<children>
+				<game_entity _index_="0">
+					<transform rotation_euler="1.128, 1.508, 3.141"/>
+				</game_entity>
+				<game_entity _index_="2">
+					<components>
+						<light_component intensity="80.000" radius="12.000" local_frame_rot="12.000000, 0.000000, 0.000000, 0.000000, 12.000000, 0.000000, 0.000000, 0.000000, 12.000000" shadow_radius="9.600"/>
+					</components>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="84.497, 62.363, 3.468" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="1.000, 0.408, 0.114" intensity="50.000" flicker_interval="1.000" shadow="1"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="prt_torch_fire">
+			<transform position="84.518, 62.345, 3.196" rotation_euler="0.000, 0.000, 0.000"/>
+			<children>
+				<game_entity _index_="0">
+					<transform position="0.063, -0.145, 0.116"/>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="wooden_platform_c">
+			<transform position="82.955, 76.107, 2.277" rotation_euler="0.000, 0.000, -1.137" scale="0.822, 0.822, 0.822"/>
+		</game_entity>
+		<game_entity prefab="wooden_platform_c">
+			<transform position="86.202, 76.079, 2.277" rotation_euler="0.000, 0.000, -2.632" scale="0.822, 0.822, 0.822"/>
+		</game_entity>
+		<game_entity prefab="wooden_platform_plank_e">
+			<transform position="84.053, 76.016, 2.104" rotation_euler="0.000, 0.000, 0.509"/>
+		</game_entity>
+		<game_entity prefab="wooden_platform_plank_e">
+			<transform position="85.409, 76.200, 2.104" rotation_euler="0.000, 0.000, -1.070"/>
+		</game_entity>
+		<game_entity prefab="weapon_heap_axe_a">
+			<transform position="75.839, 70.577, 3.060" rotation_euler="0.000, 0.000, -3.020"/>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="87.290, 70.983, 2.111" rotation_euler="0.000, 0.000, -0.473" scale="0.597, 0.597, 0.597"/>
+		</game_entity>
+		<game_entity prefab="kitchen_spoon">
+			<transform position="84.756, 65.823, 2.912" rotation_euler="-0.010, 0.034, 2.956" scale="0.494, 0.494, 1.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_fish">
+			<transform position="84.574, 66.429, 2.902" rotation_euler="0.000, 0.000, 1.532"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_c">
+			<transform position="79.573, 78.101, 4.271" rotation_euler="0.000, 0.000, -0.319"/>
+		</game_entity>
+		<game_entity prefab="kitchen_hanger_b">
+			<transform position="85.526, 63.373, 4.174" rotation_euler="0.000, 0.000, -1.840"/>
+		</game_entity>
+		<game_entity prefab="brushwood_d">
+			<transform position="77.127, 68.691, 2.103" rotation_euler="0.000, 0.000, 2.895"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_d">
+			<transform position="86.795, 76.357, 3.795" rotation_euler="0.000, 0.000, -2.297"/>
+		</game_entity>
+		<game_entity prefab="stone_pile_d">
+			<transform position="84.935, 61.590, 3.924" rotation_euler="-0.033, -1.591, 2.457" scale="0.653, 0.653, 0.653"/>
+		</game_entity>
+		<game_entity prefab="bd_straw_d">
+			<transform position="75.115, 74.787, 2.104" rotation_euler="0.000, 0.000, 0.753"/>
+		</game_entity>
+		<game_entity prefab="merchandise_wooden_stick">
+			<transform position="76.222, 69.192, 3.064" rotation_euler="0.727, 0.110, 0.353"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bottle_b">
+			<transform position="80.340, 77.444, 4.285" rotation_euler="0.000, 0.000, -0.468"/>
+		</game_entity>
+		<game_entity prefab="stone_pile_d">
+			<transform position="84.946, 61.526, 2.101" rotation_euler="0.018, -1.537, -1.207" scale="0.653, 0.653, 0.653"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_a">
+			<transform position="81.072, 67.407, 2.100" rotation_euler="0.000, 0.000, -2.384"/>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="78.396, 77.100, 2.108" rotation_euler="0.000, 0.000, -2.859" scale="0.712, 0.712, 1.000"/>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="84.676, 65.780, 2.116" rotation_euler="0.000, 0.000, -0.836"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_on_table_b">
+			<transform position="81.935, 63.697, 2.933" rotation_euler="0.000, 0.000, 0.373"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_c">
+			<transform position="79.601, 78.102, 4.426" rotation_euler="0.000, 0.000, 2.591"/>
+		</game_entity>
+		<game_entity prefab="kitchen_garlic_c">
+			<transform position="84.928, 65.397, 2.902" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="dirty_b">
+			<transform position="86.970, 72.677, 2.127" rotation_euler="0.000, 0.000, 1.688" scale="0.679, 0.679, 0.679"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_b">
+			<transform position="85.014, 66.258, 2.901" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_leek">
+			<transform position="84.800, 66.403, 2.901" rotation_euler="0.000, 0.000, 0.375"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="85.458, 65.742, 2.995" rotation_euler="0.000, 0.000, -1.082"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_b_four">
+			<transform position="85.358, 66.793, 2.900" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="84.907, 66.739, 2.901" rotation_euler="0.000, 0.000, -2.178"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bottle_c">
+			<transform position="85.597, 66.401, 2.892" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_b">
+			<transform position="85.147, 67.089, 2.900" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_on_table_a">
+			<transform position="82.777, 63.138, 2.951" rotation_euler="0.000, 0.000, -0.188"/>
+		</game_entity>
+		<game_entity prefab="bd_wood_heap_a">
+			<transform position="75.974, 70.063, 2.104" rotation_euler="0.000, 0.000, 2.014"/>
+		</game_entity>
+		<game_entity prefab="stone_pile_d">
+			<transform position="81.823, 76.269, 2.120" rotation_euler="-0.102, 3.038, -3.141" scale="0.556, 0.556, 0.556"/>
+		</game_entity>
+		<game_entity prefab="bd_skull_antilope_b">
+			<transform position="83.075, 76.864, 4.800" rotation_euler="0.000, 0.000, 0.439"/>
+		</game_entity>
+		<game_entity prefab="kitchen_pitcher_a">
+			<transform position="85.644, 67.002, 2.886" rotation_euler="0.000, 0.000, 1.102"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bottle_b">
+			<transform position="85.600, 66.676, 2.887" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_garlic_c">
+			<transform position="85.357, 67.316, 2.900" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_stew_a">
+			<transform position="84.739, 66.048, 2.902" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="80.987, 75.105, 2.767" rotation_euler="0.000, 0.000, 0.646"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="75.631, 79.419, 2.897" rotation_euler="0.000, 0.000, -0.287"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="82.821, 62.691, 4.190" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="75.327, 79.595, 2.898" rotation_euler="0.000, 0.000, 3.057"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_a">
+			<transform position="77.438, 69.454, 2.104" rotation_euler="0.000, 0.000, -2.482"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_c">
+			<transform position="75.767, 79.597, 2.104" rotation_euler="0.000, 0.000, 1.308"/>
+		</game_entity>
+		<game_entity prefab="kitchen_pitcher_a">
+			<transform position="75.503, 79.889, 2.898" rotation_euler="0.000, 0.000, 0.384"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_d">
+			<transform position="74.571, 75.236, 2.104" rotation_euler="0.000, 0.000, -1.028"/>
+		</game_entity>
+		<game_entity prefab="kitchen_pitcher_a">
+			<transform position="80.606, 75.552, 2.767" rotation_euler="0.000, 0.000, 0.770"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_a">
+			<transform position="76.530, 71.624, 2.104" rotation_euler="0.000, 0.000, -0.828"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_a">
+			<transform position="76.345, 70.848, 2.104" rotation_euler="0.000, 0.000, -2.170"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_c">
+			<transform position="77.080, 72.630, 2.104" rotation_euler="0.000, 0.000, -0.824"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_c">
+			<transform position="76.862, 68.770, 2.104" rotation_euler="0.000, 0.000, 1.308"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_a">
+			<transform position="77.057, 69.791, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="floor_dirt_b">
+			<transform position="76.107, 79.673, 2.104" rotation_euler="0.000, 0.000, 0.768"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="80.814, 75.306, 2.765" rotation_euler="0.000, 0.000, -2.794"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_a">
+			<transform position="82.714, 62.575, 4.190" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="76.802, 79.766, 4.472" rotation_euler="0.000, 0.000, -0.360"/>
+			<children>
+				<game_entity _index_="0">
+					<transform rotation_euler="1.128, 1.037, 3.141"/>
+				</game_entity>
+				<game_entity _index_="2">
+					<transform position="0.060, -0.821, 0.956"/>
+					<components>
+						<light_component intensity="100.000" radius="5.000" local_frame_rot="5.000000, 0.000000, 0.000000, 0.000000, 5.000000, 0.000000, 0.000000, 0.000000, 5.000000" shadow_radius="5.000"/>
+					</components>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="76.992, 66.553, 3.846" rotation_euler="0.000, 0.000, 1.669"/>
+			<children>
+				<game_entity _index_="0">
+					<transform rotation_euler="1.128, 1.037, 3.141"/>
+				</game_entity>
+				<game_entity _index_="2">
+					<components>
+						<light_component intensity="80.000" radius="10.000" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" shadow_radius="8.000"/>
+					</components>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_candle_b_fire">
+			<transform position="75.203, 71.536, 6.140" rotation_euler="0.000, 0.000, -0.239"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="76.023, 69.851, 4.510" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="78.046, 77.512, 4.512" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="1.000, 0.608, 0.216" intensity="50.000" shadow_radius="5.600"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="bd_wood_c">
+			<transform position="78.626, 78.509, 2.104" rotation_euler="0.000, 0.000, -0.735"/>
+		</game_entity>
+		<game_entity prefab="bd_basket_aserai_b">
+			<transform position="79.843, 76.578, 2.104" rotation_euler="0.000, 0.000, 0.903"/>
+		</game_entity>
+		<game_entity prefab="bd_basket_aserai_b">
+			<transform position="80.092, 77.712, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="74.242, 79.393, 2.111" rotation_euler="0.000, 0.000, -2.859" scale="0.712, 0.712, 1.000"/>
+		</game_entity>
+		<game_entity prefab="bd_basket_a">
+			<transform position="80.395, 77.059, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="armor_merchant_shoe_a">
+			<transform position="73.835, 79.832, 2.104" rotation_euler="0.000, 0.000, 1.982"/>
+		</game_entity>
+		<game_entity prefab="lib_book_closed_b">
+			<transform position="73.973, 75.285, 4.001" rotation_euler="0.000, 0.000, -0.612"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_c">
+			<transform position="79.573, 78.101, 4.349" rotation_euler="0.000, 0.000, 1.076"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="77.969, 75.193, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="74.382, 80.057, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_chopping_board_b">
+			<transform position="83.441, 62.723, 3.047" rotation_euler="0.000, 0.000, -0.399"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="73.347, 76.426, 3.830" rotation_euler="0.000, 0.000, 1.954"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="79.243, 64.849, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="73.900, 75.799, 3.824" rotation_euler="0.000, 0.000, 1.161"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_bread_c_slice">
+			<transform position="85.530, 67.349, 2.901" rotation_euler="0.000, 0.000, -2.276" scale="0.711, 0.711, 0.711"/>
+		</game_entity>
+		<game_entity prefab="foods_apple_a">
+			<transform position="81.220, 63.253, 3.047" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_spoon">
+			<transform position="84.999, 67.425, 2.911" rotation_euler="-0.036, 0.000, 1.679" scale="0.494, 0.494, 1.000"/>
+		</game_entity>
+		<game_entity prefab="foods_apple_a">
+			<transform position="81.343, 63.435, 3.047" rotation_euler="0.000, 0.000, 1.438"/>
+		</game_entity>
+		<game_entity prefab="foods_carrots_b">
+			<transform position="81.452, 63.226, 3.047" rotation_euler="0.000, 0.000, 1.374"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_b">
+			<transform position="85.190, 63.131, 2.104" rotation_euler="0.000, 0.000, -2.735"/>
+		</game_entity>
+		<game_entity prefab="kitchen_sausage_a">
+			<transform position="80.592, 63.261, 4.557" rotation_euler="0.000, 0.000, 1.194"/>
+		</game_entity>
+		<game_entity prefab="foods_carrots_basket">
+			<transform position="80.460, 64.373, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="foods_basket_cabbage">
+			<transform position="80.946, 63.746, 3.047" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_shelf_heap_g">
+			<transform position="74.895, 80.233, 4.392" rotation_euler="0.000, 0.000, -0.215"/>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_a">
+			<transform position="83.962, 77.351, 5.142" rotation_euler="0.000, 0.000, 0.533"/>
+		</game_entity>
+		<game_entity prefab="int_shop_ambient_sound">
+			<transform position="81.805, 70.807, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+			<scripts>
+				<script name="AmbientSoundEmitter">
+					<variables>
+						<variable name="Overrided Volume Multiplier" value="1.000000"/>
+						<variable name="Overrided Max Distance" value="20.000000"/>
+						<variable name="Overrided Min Distance" value="1.000000"/>
+					</variables>
+				</script>
+			</scripts>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_b">
+			<transform position="82.197, 76.285, 5.082" rotation_euler="0.000, 0.000, 0.430"/>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_a">
+			<transform position="72.109, 78.165, 4.932" rotation_euler="0.000, 0.000, 2.008"/>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_b">
+			<transform position="76.497, 74.005, 4.769" rotation_euler="0.000, 0.000, 0.509"/>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_a">
+			<transform position="85.809, 66.616, 5.125" rotation_euler="0.000, 0.000, 1.553"/>
+		</game_entity>
+		<game_entity prefab="bd_carpet_battania_b">
+			<transform position="77.658, 79.422, 4.865" rotation_euler="0.000, 0.000, 2.722"/>
+		</game_entity>
+		<game_entity prefab="bd_shelf_a">
+			<transform position="80.038, 78.191, 4.223" rotation_euler="0.000, 0.000, -0.688"/>
+		</game_entity>
+		<game_entity prefab="dirty_a">
+			<transform position="84.328, 75.872, 2.104" rotation_euler="0.000, 0.000, 0.432"/>
+		</game_entity>
+		<game_entity prefab="empire_dungeon_door_a_closed_2sided">
+			<transform position="85.156, 62.216, 4.910" rotation_euler="0.000, 0.000, 1.252" scale="0.479, 0.479, 0.479"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="87.042, 73.968, 2.765" rotation_euler="0.000, 0.000, 1.969"/>
+		</game_entity>
+		<game_entity prefab="dirty_a">
+			<transform position="84.763, 76.511, 2.109" rotation_euler="0.000, 0.000, -0.965"/>
+		</game_entity>
+		<game_entity prefab="dirty_a">
+			<transform position="76.590, 72.383, 2.111" rotation_euler="0.000, 0.000, 0.726"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="81.006, 75.942, 3.851" rotation_euler="0.000, 0.000, 0.257"/>
+			<children>
+				<game_entity _index_="0">
+					<transform rotation_euler="1.128, 1.037, 3.141"/>
+				</game_entity>
+				<game_entity _index_="2">
+					<components>
+						<light_component intensity="100.000" radius="10.000" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" shadow_radius="8.000"/>
+					</components>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="lib_book_open_a">
+			<transform position="76.543, 79.262, 2.896" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="carry_book">
+			<transform position="79.435, 78.225, 4.408" rotation_euler="0.726, -0.181, -1.901" scale="0.800, 0.900, 0.600"/>
+		</game_entity>
+		<game_entity prefab="lib_book_open_d">
+			<transform position="84.837, 67.520, 2.901" rotation_euler="0.000, 0.000, -2.448"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_d">
+			<transform position="84.578, 67.024, 2.902" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_a">
+			<transform position="80.082, 77.822, 4.298" rotation_euler="0.000, 0.000, 0.673"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_c">
+			<transform position="79.165, 78.439, 4.298" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_e">
+			<transform position="80.561, 75.198, 2.766" rotation_euler="0.000, 0.000, 0.686"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_c">
+			<transform position="85.374, 67.634, 2.900" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="lib_scroll_c">
+			<transform position="85.242, 67.470, 2.900" rotation_euler="0.000, 0.000, 2.820"/>
+		</game_entity>
+		<game_entity prefab="vlandia_onehanded_sword_a">
+			<transform position="84.437, 67.336, 2.875" rotation_euler="-0.422, -3.141, -1.571"/>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_occult_caster"/>
+			</tags>
+			<transform position="83.789, 68.128, 2.104" rotation_euler="0.000, 0.000, -0.435"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<children>
+				<game_entity name="animation_point" old_prefab_name="animation_point" mobility="1">
+					<flags>
+						<flag name="record_to_scene_replay" value="true"/>
+					</flags>
+					<visibility_masks>
+						<visibility_mask name="visible_only_when_editing" value="true"/>
+					</visibility_masks>
+					<scripts>
+						<script name="AnimationPoint">
+							<variables>
+								<variable name="ArriveAction" value=""/>
+								<variable name="LoopStartAction" value="act_stand_1"/>
+								<variable name="PairLoopStartAction" value=""/>
+								<variable name="LeaveAction" value=""/>
+								<variable name="GroupId" value="-1"/>
+								<variable name="RightHandItem" value=""/>
+								<variable name="RightHandItemBone" value="ItemR"/>
+								<variable name="LeftHandItem" value=""/>
+								<variable name="LeftHandItemBone" value="ItemL"/>
+								<variable name="MinUserToStartInteraction" value="1"/>
+								<variable name="ActivatePairs" value="false"/>
+								<variable name="MinWaitinSeconds" value="50.000"/>
+								<variable name="MaxWaitInSeconds" value="320.000"/>
+								<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+								<variable name="SideDistanceToPivotPoint" value="0.000"/>
+								<variable name="KeepOldVisibility" value="false"/>
+								<variable name="AutoSheathWeapons" value="false"/>
+								<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+								<variable name="AutoWieldWeapons" value="false"/>
+								<variable name="TranslateUser" value="true"/>
+								<variable name="HasRecentlyBeenRechecked" value="false"/>
+								<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+								<variable name="_customPlayerInteractionDistance" value="0.000"/>
+								<variable name="NavMeshPrefabName" value=""/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_creature_specimen"/>
+			</tags>
+			<transform position="74.816, 78.853, 2.104" rotation_euler="0.000, 0.000, -1.879"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<children>
+				<game_entity name="animation_point" old_prefab_name="" mobility="1">
+					<flags>
+						<flag name="record_to_scene_replay" value="true"/>
+					</flags>
+					<visibility_masks>
+						<visibility_mask name="visible_only_when_editing" value="true"/>
+					</visibility_masks>
+					<scripts>
+						<script name="AnimationPoint">
+							<variables>
+								<variable name="ArriveAction" value=""/>
+								<variable name="LoopStartAction" value="act_stand_1"/>
+								<variable name="PairLoopStartAction" value=""/>
+								<variable name="LeaveAction" value=""/>
+								<variable name="GroupId" value="-1"/>
+								<variable name="RightHandItem" value=""/>
+								<variable name="RightHandItemBone" value="ItemR"/>
+								<variable name="LeftHandItem" value=""/>
+								<variable name="LeftHandItemBone" value="ItemL"/>
+								<variable name="MinUserToStartInteraction" value="1"/>
+								<variable name="ActivatePairs" value="false"/>
+								<variable name="MinWaitinSeconds" value="50.000"/>
+								<variable name="MaxWaitInSeconds" value="320.000"/>
+								<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+								<variable name="SideDistanceToPivotPoint" value="0.000"/>
+								<variable name="KeepOldVisibility" value="false"/>
+								<variable name="AutoSheathWeapons" value="false"/>
+								<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+								<variable name="AutoWieldWeapons" value="false"/>
+								<variable name="TranslateUser" value="true"/>
+								<variable name="HasRecentlyBeenRechecked" value="false"/>
+								<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+								<variable name="_customPlayerInteractionDistance" value="0.000"/>
+								<variable name="NavMeshPrefabName" value=""/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="81.309, 66.654, 4.512" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="1.000, 0.608, 0.216" intensity="50.000" radius="6.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" shadow_radius="5.600"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="dirty_a">
+			<transform position="86.427, 67.726, 2.143" rotation_euler="0.000, 0.000, 1.081"/>
+		</game_entity>
+		<game_entity name="_negative_light_01" prefab="_negative_light">
+			<transform position="75.880, 71.585, 10.850" rotation_euler="0.000, 0.000, 0.421" scale="1.506, 3.257, 1.916"/>
+			<components>
+				<meta_mesh_component>
+					<mesh name="negative_light_mesh" argument="0.900, 0.900, 0.300, 0.500" argument2="1.000, 0.000, 0.000, 0.000"/>
+				</meta_mesh_component>
+			</components>
+			<scripts>
+				<script name="ScenePropNegativeLight">
+					<variables>
+						<variable name="Flatness_X" value="0.900"/>
+						<variable name="Flatness_Y" value="0.900"/>
+						<variable name="Flatness_Z" value="0.300"/>
+						<variable name="Alpha" value="0.500"/>
+					</variables>
+				</script>
+			</scripts>
+		</game_entity>
+		<game_entity name="battania_town_house_b_interior_b_01" prefab="battania_town_house_b_interior_b">
+			<transform position="79.186, 75.472, 3.450" rotation_euler="0.000, 0.000, 0.000"/>
+			<edit_mode_data locked_for_selection="true"/>
+		</game_entity>
+		<game_entity prefab="mat_carpet_i">
+			<transform position="80.541, 71.611, 2.104" rotation_euler="0.000, 0.000, -2.949"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_c">
+			<transform position="85.235, 65.646, 2.902" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_bread_c_slice">
+			<transform position="85.387, 66.153, 2.901" rotation_euler="0.000, 0.000, -0.579" scale="0.711, 0.711, 0.711"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bowl_c">
+			<transform position="85.583, 67.663, 2.900" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_spoon">
+			<transform position="85.467, 65.570, 2.912" rotation_euler="0.028, 0.022, -2.127" scale="0.494, 0.494, 1.000"/>
+		</game_entity>
+		<game_entity prefab="foods_cabbage_a">
+			<transform position="81.696, 63.058, 3.047" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_leek">
+			<transform position="82.040, 63.024, 3.047" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_leek">
+			<transform position="81.767, 63.292, 3.047" rotation_euler="0.000, 0.000, -2.830"/>
+		</game_entity>
+		<game_entity prefab="foods_pumpkin_a">
+			<transform position="79.876, 64.480, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_leek">
+			<transform position="81.949, 63.064, 3.047" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_b">
+			<transform position="77.031, 67.336, 2.108" rotation_euler="0.000, 0.000, 0.630"/>
+		</game_entity>
+		<game_entity prefab="sp_player">
+			<tags>
+				<tag name="spawnpoint_player"/>
+				<tag name="sp_player_entry"/>
+			</tags>
+			<transform position="86.710, 71.908, 2.160" rotation_euler="0.000, 0.000, 1.814"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="79.524, 66.815, 2.111" rotation_euler="0.000, 0.000, 0.000" scale="0.589, 0.589, 0.589"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_wall_a_battania">
+			<transform position="88.369, 69.657, 4.203" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_wall_b_battania">
+			<transform position="87.746, 69.290, 4.244" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_wall_c_battania">
+			<transform position="87.273, 69.011, 4.197" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="tavern_battania_table_c">
+			<transform position="80.860, 63.693, 1.897" rotation_euler="0.000, 0.000, 2.677"/>
+		</game_entity>
+		<game_entity prefab="tavern_battania_stove_a">
+			<transform position="84.477, 62.327, 2.104" rotation_euler="0.000, 0.000, 2.959"/>
+		</game_entity>
+		<game_entity prefab="tavern_battania_table_a">
+			<transform position="82.633, 62.848, 1.897" rotation_euler="0.000, 0.000, 2.686"/>
+		</game_entity>
+		<game_entity prefab="bd_cupboard_kitchen_a">
+			<transform position="79.532, 63.974, 2.104" rotation_euler="0.000, 0.000, 2.700"/>
+		</game_entity>
+		<game_entity prefab="bd_shelf_c">
+			<transform position="81.819, 62.667, 3.808" rotation_euler="0.000, 0.000, 2.735" scale="0.777, 0.777, 0.777"/>
+		</game_entity>
+		<game_entity prefab="kitchen_garlic_a">
+			<transform position="83.055, 62.184, 4.126" rotation_euler="0.000, 0.000, 3.007"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_bread_a">
+			<transform position="82.403, 62.825, 3.047" rotation_euler="0.000, 0.000, -2.778"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_leek">
+			<transform position="85.079, 65.456, 2.902" rotation_euler="0.000, 0.000, 1.085"/>
+		</game_entity>
+		<game_entity prefab="kitchen_garlic_bundle">
+			<transform position="83.247, 62.089, 4.420" rotation_euler="-0.016, 0.024, -2.139"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_bread_a">
+			<transform position="82.570, 62.736, 3.164" rotation_euler="0.000, 0.000, -2.778"/>
+		</game_entity>
+		<game_entity prefab="kitchen_knife">
+			<transform position="83.019, 63.000, 3.047" rotation_euler="0.000, 0.000, -1.710"/>
+		</game_entity>
+		<game_entity prefab="kitchen_food_bread_a">
+			<transform position="82.729, 62.698, 3.047" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="kitchen_pot_f">
+			<transform position="84.792, 62.072, 3.197" rotation_euler="0.000, 0.000, 2.303"/>
+		</game_entity>
+		<game_entity prefab="kitchen_cutting_food_leek">
+			<transform position="83.438, 62.587, 3.118" rotation_euler="0.000, 0.000, -0.144"/>
+		</game_entity>
+		<game_entity prefab="envmap_prop">
+			<transform position="80.901, 70.502, 3.804" rotation_euler="0.000, 0.000, -2.305"/>
+		</game_entity>
+		<game_entity prefab="ruinous_castle_stone_heap_b">
+			<transform position="78.219, 63.440, 1.835" rotation_euler="0.038, 0.222, 1.234" scale="0.475, 0.475, 0.475"/>
+		</game_entity>
+		<game_entity prefab="bd_battania_pot">
+			<transform position="76.069, 79.577, 2.897" rotation_euler="0.000, 0.000, -0.191"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bottle_a">
+			<transform position="80.555, 77.283, 4.296" rotation_euler="0.000, 0.000, -0.400"/>
+		</game_entity>
+		<game_entity prefab="bd_cloth_on_table_a">
+			<transform position="76.113, 79.381, 2.801" rotation_euler="0.000, 0.000, -3.099"/>
+		</game_entity>
+		<game_entity prefab="bd_wall_bucket">
+			<transform position="86.479, 68.471, 3.057" rotation_euler="0.000, 0.000, -2.837"/>
+		</game_entity>
+		<game_entity prefab="lib_book_closed_a">
+			<transform position="74.007, 75.301, 3.921" rotation_euler="0.000, 0.000, -2.688"/>
+		</game_entity>
+		<game_entity prefab="kitchen_bottle_b">
+			<transform position="73.465, 76.073, 3.820" rotation_euler="0.000, 0.000, -0.579"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_a">
+			<transform position="75.851, 77.362, 2.104" rotation_euler="0.000, 0.000, -3.046"/>
+		</game_entity>
+		<game_entity prefab="kitchen_mug_a">
+			<transform position="73.674, 75.673, 3.818" rotation_euler="0.000, 0.000, -0.247"/>
+		</game_entity>
+		<game_entity prefab="bd_battania_pot">
+			<transform position="87.442, 74.032, 2.766" rotation_euler="0.000, 0.000, -0.934"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="76.971, 72.948, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="lib_book_closed_a">
+			<transform position="74.002, 75.340, 3.838" rotation_euler="0.000, 0.000, -2.471"/>
+		</game_entity>
+		<game_entity prefab="armor_merchant_shoe_b">
+			<transform position="77.775, 75.645, 2.104" rotation_euler="0.000, 0.000, -2.810"/>
+		</game_entity>
+		<game_entity prefab="bd_table_e">
+			<transform position="80.698, 75.322, 2.104" rotation_euler="0.000, 0.000, 1.976" scale="0.540, 0.831, 0.831"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="87.630, 74.595, 4.227" rotation_euler="0.000, 0.000, -1.194"/>
+			<children>
+				<game_entity _index_="0">
+					<transform rotation_euler="1.128, 1.037, 3.141"/>
+				</game_entity>
+				<game_entity _index_="2">
+					<components>
+						<light_component intensity="80.000" radius="10.000" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" shadow_radius="8.000"/>
+					</components>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="mat_fur_c">
+			<transform position="82.200, 75.886, 2.571" rotation_euler="0.000, 0.000, 0.412"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_c">
+			<transform position="84.225, 77.050, 2.571" rotation_euler="0.000, 0.000, -2.688"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_c">
+			<transform position="85.834, 77.111, 2.571" rotation_euler="0.000, 0.000, 2.200"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_c">
+			<transform position="86.744, 75.490, 2.571" rotation_euler="0.000, 0.000, -1.116"/>
+		</game_entity>
+		<game_entity prefab="bd_pillow_g">
+			<transform position="81.786, 76.046, 2.573" rotation_euler="0.000, 0.000, -1.111"/>
+		</game_entity>
+		<game_entity prefab="bd_pillow_g">
+			<transform position="83.020, 76.672, 2.573" rotation_euler="0.000, 0.000, -1.111"/>
+		</game_entity>
+		<game_entity prefab="bd_pillow_g">
+			<transform position="84.864, 77.759, 2.792" rotation_euler="0.000, 1.115, -1.111"/>
+		</game_entity>
+		<game_entity prefab="bd_pillow_g">
+			<transform position="87.228, 75.273, 2.746" rotation_euler="0.079, 0.858, -2.732"/>
+		</game_entity>
+		<game_entity prefab="bd_pillow_g">
+			<transform position="86.374, 76.780, 2.733" rotation_euler="0.034, -1.002, 0.561"/>
+		</game_entity>
+		<game_entity prefab="bd_table_e">
+			<transform position="87.309, 73.921, 2.104" rotation_euler="0.000, 0.000, 0.516" scale="0.540, 0.831, 0.831"/>
+		</game_entity>
+		<game_entity prefab="bd_table_e">
+			<transform position="76.031, 79.531, 2.100" rotation_euler="0.000, 0.000, 2.889"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_b">
+			<transform position="84.475, 73.594, 2.093" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="mat_fur_c">
+			<transform position="86.187, 70.867, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_shelf_2_heap_a">
+			<transform position="76.270, 72.788, 3.471" rotation_euler="0.000, 0.000, 0.598"/>
+		</game_entity>
+		<game_entity prefab="bd_barrel_a">
+			<transform position="75.683, 71.731, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_barrel_a">
+			<transform position="76.446, 72.420, 2.104" rotation_euler="0.000, 0.000, 0.865"/>
+		</game_entity>
+		<game_entity prefab="bd_barrel_a">
+			<transform position="89.119, 70.483, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="88.905, 71.160, 2.104" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_bucket_a">
+			<transform position="88.566, 69.978, 2.104" rotation_euler="0.000, 0.000, -1.245"/>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="84.531, 72.855, 4.512" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="1.000, 0.608, 0.216" intensity="100.000" radius="6.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" shadow_radius="5.600"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="75.510, 77.754, 4.512" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="1.000, 0.608, 0.216" intensity="100.000" radius="4.000" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" shadow_radius="4.000"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="bd_straw_h">
+			<transform position="76.915, 70.874, 2.125" rotation_euler="0.000, 0.000, -1.744"/>
+		</game_entity>
+		<game_entity prefab="bed_wodden_straw_c">
+			<transform position="75.850, 74.753, 2.104" rotation_euler="0.000, 0.000, 0.484"/>
+		</game_entity>
+		<game_entity prefab="bed_wodden_straw_e">
+			<transform position="73.237, 78.508, 2.104" rotation_euler="0.000, 0.000, -1.061"/>
+		</game_entity>
+		<game_entity prefab="bd_shelf_hanged_d">
+			<transform position="73.530, 75.642, 4.870" rotation_euler="0.000, 0.000, -2.608" scale="0.720, 0.720, 0.720"/>
+		</game_entity>
+	</entities>
+	<terrain enabled="false"/>
+	<editor_data editor_camera_position="83.763, 71.711, 4.873" editor_camera_elevation="-0.190" editor_camera_bearing="-0.412" editor_camera_forward="0.893, 0.258, -0.370" author="Mert" comment=""/>
+	<camera_data near_plane="0.100" far_plane="5000.000"/>
+	<Paths/>
+</scene>
+

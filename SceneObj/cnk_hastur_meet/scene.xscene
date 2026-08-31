@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<scene name="cnk_hastur_meet" version="2">
+	<flora_bounding_rect min="0.000, 0.000" max="0.000, 0.000"/>
+	<levels>
+		<level name="base" mask="1"/>
+		<level name="level_1" mask="2"/>
+		<level name="level_2" mask="4"/>
+		<level name="level_3" mask="8"/>
+	</levels>
+	<environment_properties>
+		<property name="nav_mesh_auto_generated_" value="true"/>
+		<property name="physics_world_min" value="-1.929, 0.000"/>
+		<property name="physics_world_max_" value="55.725, 66.296"/>
+		<property name="north_angle" value="0.000"/>
+		<property name="is_indoors" value="true"/>
+		<property name="disable_flora_billboards" value="false"/>
+		<property name="ground_color" value="0.000, 0.000, 0.000"/>
+		<property name="prt_multiplier" value="1.000"/>
+		<property name="prt_point_light_multiplier" value="1.000"/>
+		<property name="fog_start_distance" value="50.000"/>
+		<property name="prt_color_contrast" value="1.000"/>
+		<property name="scene_scale_multiplier" value="1.000"/>
+		<property name="prt_intensity_contrast" value="1.000"/>
+		<property name="prt_fallback_probe_index" value="-1, -1, -1"/>
+		<property name="enforced_color_grade" value=""/>
+		<property name="gi_data_exists" value="false"/>
+		<atmosphere_properties>
+			<property name="atmosphere_name" value="scene_atmosphere"/>
+			<property name="wind_meters" value="0.000, 0.000"/>
+			<property name="scene_fog_falloff_offset" value="0.000"/>
+		</atmosphere_properties>
+		<water_properties version="1">
+			<property name="water_level" value="-100.000"/>
+			<property name="water_strength" value="5.000"/>
+			<property name="water_wind_dependency" value="1.000"/>
+			<property name="choppiness" value="1.000"/>
+			<property name="water_material" value="wat_sea_side_g"/>
+			<property name="non_naval_water_material_override" value=""/>
+			<property name="water_shallow_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_deep_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_exists" value="true"/>
+			<property name="place_water_probe" value="false"/>
+		</water_properties>
+		<out_of_bounds_effects_properties>
+			<property name="vignette_color" value="0.000, 0.500, 1.000"/>
+			<property name="vignette_alpha" value="0.000"/>
+		</out_of_bounds_effects_properties>
+	</environment_properties>
+	<entities>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_cultist"/>
+			</tags>
+			<transform position="11.883, 44.352, -11.212" rotation_euler="0.000, 0.000, -1.571"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_cultist"/>
+			</tags>
+			<transform position="16.278, 40.092, -11.212" rotation_euler="0.000, 0.000, 1.571"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_cultist"/>
+			</tags>
+			<transform position="29.013, 51.952, -5.766" rotation_euler="0.000, 0.000, -1.571"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_cultist"/>
+			</tags>
+			<transform position="27.765, 35.609, -5.956" rotation_euler="0.000, 0.000, -0.861"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_cultist"/>
+			</tags>
+			<transform position="7.317, 48.322, -11.232" rotation_euler="0.000, 0.000, -2.165"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_yokai"/>
+			</tags>
+			<transform position="6.376, 36.712, -10.398" rotation_euler="0.000, 0.000, -0.904"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_yokai"/>
+			</tags>
+			<transform position="6.270, 39.873, -10.398" rotation_euler="0.000, 0.000, -2.317"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_yokai"/>
+			</tags>
+			<transform position="11.746, 42.402, -11.226" rotation_euler="0.000, 0.000, -1.571"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity name="sp_npc_idle" old_prefab_name="sp_npc_idle" mobility="1">
+			<flags>
+				<flag name="record_to_scene_replay" value="true"/>
+			</flags>
+			<visibility_masks>
+				<visibility_mask name="visible_only_when_editing" value="true"/>
+			</visibility_masks>
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_yokai"/>
+			</tags>
+			<transform position="15.285, 36.415, -11.219" rotation_euler="0.000, 0.000, 0.835"/>
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+			<scripts>
+				<script name="UsablePlace">
+					<variables>
+						<variable name="PilotStandingPointTag" value="Pilot"/>
+						<variable name="AmmoPickUpTag" value="ammopickup"/>
+						<variable name="WaitStandingPointTag" value="Wait"/>
+						<variable name="NavMeshPrefabName" value=""/>
+					</variables>
+				</script>
+			</scripts>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="a_spr_light">
+			<transform position="8.071, 33.539, -5.746" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<light_component color="0.847, 0.741, 1.000" intensity="10.000"/>
+			</components>
+		</game_entity>
+		<game_entity prefab="european_castle_stairs_c_l2">
+			<transform position="10.097, 39.751, -11.988" rotation_euler="0.000, 0.000, 1.583"/>
+		</game_entity>
+		<game_entity prefab="module_european_stone_floor_a">
+			<transform position="5.873, 38.223, -10.499" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.100, 1.000"/>
+		</game_entity>
+		<game_entity prefab="sturgia_grandbazaar_stone_fence_b">
+			<transform position="8.544, 38.322, -11.785" rotation_euler="0.000, 0.000, 1.582"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_a_hang_b">
+			<transform position="5.368, 38.262, -7.780" rotation_euler="0.000, 0.000, 1.571"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_b">
+			<transform position="7.057, 38.257, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_a_hang_a">
+			<transform position="8.095, 35.476, -6.475" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_a_hang_a">
+			<transform position="8.224, 41.063, -6.863" rotation_euler="0.000, 0.000, 3.141"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_b_hang_b">
+			<transform position="14.221, 47.119, -7.434" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_b">
+			<transform position="14.169, 39.930, -11.229" rotation_euler="0.000, 0.000, 0.000" scale="1.850, 1.850, 1.000"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_c_hang_b">
+			<transform position="11.377, 44.273, -7.503" rotation_euler="0.000, 0.000, 1.571"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_c">
+			<transform position="14.121, 45.020, -11.228" rotation_euler="0.000, 0.000, 1.571" scale="1.400, 1.400, 1.000"/>
+		</game_entity>
+		<game_entity prefab="carpet_empire_e">
+			<transform position="8.753, 48.476, -11.177" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_a_fire">
+			<transform position="7.136, 40.370, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="6.853, 40.730, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_b_fire">
+			<transform position="5.797, 40.253, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_a_fire">
+			<transform position="8.310, 35.690, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="7.764, 36.421, -10.398" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="bd_chest_sturgia_e">
+			<transform position="5.692, 38.243, -10.398" rotation_euler="0.000, 0.000, 3.141"/>
+		</game_entity>
+		<game_entity prefab="bd_chest_d">
+			<transform position="16.300, 38.175, -11.235" rotation_euler="0.000, 0.000, -1.571"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="16.527, 39.043, -10.132" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_b_fire">
+			<transform position="16.398, 38.892, -10.132" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="shop_prop_merchantsilversmith_d">
+			<transform position="17.037, 38.164, -8.919" rotation_euler="0.000, 0.000, -1.571"/>
+		</game_entity>
+		<game_entity prefab="wall_carpet_e">
+			<transform position="14.188, 35.393, -5.734" rotation_euler="0.000, 0.000, 3.141"/>
+		</game_entity>
+		<game_entity prefab="bd_wall_decoration_weapons_c">
+			<transform position="17.106, 44.295, -8.374" rotation_euler="0.000, 0.000, -1.571"/>
+			<children>
+				<game_entity _index_="2">
+					<transform position="0.078, 0.000, 0.241"/>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="bd_wall_decoration_weapons_k">
+			<transform position="9.937, 41.098, -8.503" rotation_euler="0.000, 0.000, 0.000"/>
+			<children>
+				<game_entity _index_="2">
+					<transform position="0.124, 0.023, 0.079"/>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="bd_sturgia_wall_decoration_horn_b">
+			<transform position="5.461, 38.242, -6.548" rotation_euler="0.000, 0.000, 3.141"/>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_vessel"/>
+			</tags>
+			<transform position="9.974, 36.505, -11.223" rotation_euler="0.000, 0.000, -0.796"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="torch_wall_c">
+			<transform position="10.469, 47.350, -8.985" rotation_euler="0.000, 0.000, -1.592"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_entrance_a">
+			<transform position="14.104, 35.506, -11.225" rotation_euler="0.000, 0.000, 3.141"/>
+			<children>
+				<game_entity _index_="0">
+					<scripts>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="20.000000"/>
+								<variable name="Overrided Min Distance" value="1.000000"/>
+							</variables>
+						</script>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="10000.000000"/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_stair_b">
+			<transform position="42.201, 34.109, 9.269" rotation_euler="0.000, 0.000, 3.141"/>
+		</game_entity>
+		<game_entity prefab="torch_long_b">
+			<transform position="21.586, 52.704, -9.581" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_chandelier_fire">
+			<transform position="33.463, 53.556, -0.214" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="6.337, 35.938, -10.396" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="42.129, 38.117, 1.199" rotation_euler="0.000, 0.000, 1.146"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_st_a_opened">
+			<transform position="37.571, 53.574, -5.650" rotation_euler="0.000, 0.000, -1.633"/>
+		</game_entity>
+		<game_entity name="vlandia_dungeon_corridor_c" old_prefab_name="">
+			<transform position="22.042, 53.924, -9.528" rotation_euler="0.000, 0.000, -1.582"/>
+			<physics shape="bo_vlandia_dungeon_corridor_c"/>
+			<components>
+				<meta_mesh_component name="vlandia_dungeon_corridor_c"/>
+			</components>
+			<children>
+				<game_entity name="ambient_sound_emitter" old_prefab_name="">
+					<transform position="2.534, -4.118, 1.395" rotation_euler="0.000, 0.000, -0.927" scale="6.166, 2.425, 3.059"/>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_candle_b_fire">
+			<transform position="6.237, 36.099, -10.392" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="envmap_prop">
+			<transform position="33.046, 53.303, -3.960" rotation_euler="0.000, 0.000, 0.527"/>
+		</game_entity>
+		<game_entity prefab="torch_long_b">
+			<transform position="36.101, 56.291, -5.777" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_a_fire">
+			<transform position="39.726, 54.542, -5.379" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_st_a_empty">
+			<transform position="22.037, 53.833, -9.491" rotation_euler="0.000, 0.000, -1.582"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="31.840, 40.829, -4.158" rotation_euler="0.000, 0.000, 1.456"/>
+		</game_entity>
+		<game_entity prefab="sp_npc_idle">
+			<tags>
+				<tag name="npc_idle"/>
+				<tag name="sp_hastur_avatar"/>
+			</tags>
+			<transform position="8.012, 38.208, -10.419" rotation_euler="0.000, 0.000, -1.560"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="torch_wall_c">
+			<transform position="29.970, 50.630, -4.097" rotation_euler="0.000, 0.000, 3.020"/>
+			<children>
+				<game_entity _index_="1">
+					<transform rotation_euler="0.000, 0.000, 2.582"/>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_st_b_opened">
+			<transform position="28.173, 53.668, -5.685" rotation_euler="0.000, 0.000, -1.582"/>
+		</game_entity>
+		<game_entity prefab="envmap_prop">
+			<transform position="43.582, 38.663, 0.930" rotation_euler="0.000, 0.000, 0.527"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_room_a">
+			<transform position="32.972, 39.358, -5.934" rotation_euler="0.000, 0.000, -1.561"/>
+			<children>
+				<game_entity _index_="0">
+					<scripts>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="20.000000"/>
+								<variable name="Overrided Min Distance" value="1.000000"/>
+							</variables>
+						</script>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="10000.000000"/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="28.171, 55.091, -4.375" rotation_euler="0.000, 0.000, -1.489"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_corridor_b">
+			<transform position="33.584, 49.136, -5.739" rotation_euler="0.000, 0.000, 0.000"/>
+			<children>
+				<game_entity _index_="0">
+					<scripts>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="20.000000"/>
+								<variable name="Overrided Min Distance" value="1.000000"/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_long_b">
+			<transform position="12.535, 40.908, -11.239" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_a_opened">
+			<transform position="44.212, 46.293, -4.050" rotation_euler="0.000, 0.000, -0.115"/>
+		</game_entity>
+		<game_entity prefab="_barrier_04x04m">
+			<transform position="42.266, 36.898, 0.000" rotation_euler="0.000, 0.000, 2.470" scale="4.000, 1.000, 4.000"/>
+		</game_entity>
+		<game_entity prefab="sp_player">
+			<tags>
+				<tag name="spawnpoint_player"/>
+				<tag name="sp_player_entry"/>
+			</tags>
+			<transform position="43.526, 38.803, -0.425" rotation_euler="0.000, 0.000, -0.436"/>
+			<levels>
+				<level name="level_1"/>
+				<level name="level_2"/>
+				<level name="level_3"/>
+			</levels>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_stair_st_a_wall">
+			<transform position="28.089, 53.727, -5.746" rotation_euler="0.000, 0.000, -1.582"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_a">
+			<transform position="17.012, 46.207, -8.897" rotation_euler="0.000, 0.000, -1.472"/>
+		</game_entity>
+		<game_entity prefab="torch_candle_c_fire">
+			<transform position="13.963, 48.139, -11.134" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_stair_a">
+			<transform position="43.920, 40.495, -0.260" rotation_euler="0.000, 0.000, 3.096"/>
+		</game_entity>
+		<game_entity prefab="torch_wall_c">
+			<transform position="45.551, 49.058, -1.894" rotation_euler="0.000, 0.000, -1.267"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_st_a_empty">
+			<transform position="33.561, 49.039, -5.758" rotation_euler="0.000, 0.000, -0.050"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_corridor_st_d">
+			<transform position="33.466, 53.533, -5.839" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_corridor_c">
+			<transform position="44.344, 46.378, -4.017" rotation_euler="0.000, 0.000, 3.088"/>
+			<children>
+				<game_entity _index_="0">
+					<scripts>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="20.000000"/>
+								<variable name="Overrided Min Distance" value="1.000000"/>
+							</variables>
+						</script>
+						<script name="AmbientSoundEmitter">
+							<variables>
+								<variable name="Overrided Volume Multiplier" value="1.000000"/>
+								<variable name="Overrided Max Distance" value="20.000000"/>
+								<variable name="Overrided Min Distance" value="1.000000"/>
+							</variables>
+						</script>
+					</scripts>
+				</game_entity>
+			</children>
+		</game_entity>
+		<game_entity prefab="torch_long_b">
+			<transform position="31.094, 38.291, -5.955" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="vlandia_dungeon_door_st_b_closed">
+			<transform position="33.343, 58.403, -5.770" rotation_euler="0.000, 0.000, -0.013"/>
+		</game_entity>
+		<game_entity prefab="envmap_prop">
+			<transform position="14.284, 38.632, -8.490" rotation_euler="0.000, 0.000, 0.527"/>
+		</game_entity>
+	</entities>
+	<terrain enabled="false"/>
+	<editor_data editor_camera_position="15.968, 21.866, 7.599" editor_camera_elevation="-0.770" editor_camera_bearing="-99.750" editor_camera_forward="0.167, 0.835, -0.524" author="Mert" comment=""/>
+	<camera_data near_plane="0.100" far_plane="5000.000"/>
+	<Paths/>
+</scene>
+
